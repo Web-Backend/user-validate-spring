@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th:block th:if="${message}">
+    <h1 style="color: red" th:text="${message}"></h1>
+</th:block>
+<table>
+    <tr>
+        <td th:text="${user.firstName}"></td>
+    </tr>
+</table>
+</body>
+</html>
